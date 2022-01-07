@@ -1,0 +1,31 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #171923;
+}
+
+.container {
+  position: relative;
+  margin: 4rem auto 0;
+  max-width: 960px;
+}
+
+canvas {
+  position: absolute;
+}
+
+#ui-frame {
+  z-index: 5;
+}
+
+#game-frame {
+  z-index: 3;
+}
+
+#bg-frame {
+  z-index: 1;
+}

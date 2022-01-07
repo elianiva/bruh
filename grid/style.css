@@ -1,0 +1,80 @@
+div {
+  height: 100%;
+}
+
+.box {
+  display: grid;
+  width: 60rem;
+  gap: 0.25rem;
+  grid-template-rows: repeat(9, 4rem);
+  grid-template-areas:
+    "st st st st st st st st n1 n1 n1 n2 n2 n2 n3 n3 n3"
+    "pt pt pt pt pt pt pt pt pt pt pt pt pt sb sb sb sb"
+    "pt pt pt pt pt pt pt pt pt pt pt pt pt sb sb sb sb"
+    "pm pm pm pm mc mc mc mc mc mc mc mc mc sb sb sb sb"
+    "pm pm pm pm mc mc mc mc mc mc mc mc mc ad ad ad ad"
+    "pm pm pm pm mi mi mi mi mi mi mi mi mi ad ad ad ad"
+    "pm pm pm pm mi mi mi mi mi mi mi mi mi os os os os"
+    "pm pm pm pm mi mi mi mi mi mi mi mi mi os os os os"
+    "ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff ff";
+}
+
+.site-title {
+  grid-area: st;
+  background-color: #fdd633;
+}
+
+.nav1 {
+  grid-area: n1;
+  background-color: #f6c0cb;
+}
+
+.nav2 {
+  grid-area: n2;
+  background-color: #f6c0cb;
+}
+
+.nav3 {
+  grid-area: n3;
+  background-color: #f6c0cb;
+}
+
+.post-title {
+  grid-area: pt;
+  background-color: #afd8e5;
+}
+
+.side-bar {
+  grid-area: sb;
+  background-color: #f6a94b;
+}
+
+.post-meta {
+  grid-area: pm;
+  background-color: #97ed94;
+}
+
+.main-content {
+  grid-area: mc;
+  background-color: #d3d3d3;
+}
+
+.ads {
+  grid-area: ad;
+  background-color: #3a7f13;
+}
+
+.main-content-image {
+  grid-area: mi;
+  background-color: #fff837;
+}
+
+.other-stuff {
+  grid-area: os;
+  background-color: #dd5ff9;
+}
+
+.footer {
+  grid-area: ff;
+  background-color: #a08980;
+}
